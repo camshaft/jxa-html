@@ -1,0 +1,18 @@
+(ns jxa-html)
+
+(define inline
+  [<<"a">> <<"abbr">> <<"acronym">> <<"b">> <<"br">> <<"code">>
+   <<"em">> <<"font">> <<"i">> <<"img">> <<"ins">> <<"kbd">>
+   <<"map">> <<"samp">> <<"small">> <<"span">> <<"strong">>
+   <<"sub">> <<"sup">>])
+
+(define self-closing
+  [<<"area">> <<"base">> <<"br">> <<"col">> <<"embed">> <<"hr">>
+   <<"img">> <<"input">> <<"keygen">> <<"link">> <<"menuitem">>
+   <<"meta">> <<"param">> <<"source">> <<"track">> <<"wbr">>])
+
+(defmacro+ el (name attrs &rest contents)
+  `())
+
+(defmacro+ defel (name)
+  `())
